@@ -52,7 +52,6 @@ module.exports = {
   toBeNonEmptyObject: require('./toBeNonEmptyObject.spec'),
   toBeNonEmptyString: require('./toBeNonEmptyString.spec'),
   toBeNumber: require('./toBeNumber.spec'),
-  toBeNumericString: require('./toBeNumericString.spec'),
   toBeObject: require('./toBeObject.spec'),
   toBeOddNumber: require('./toBeOddNumber.spec'),
   toBeRegExp: require('./toBeRegExp.spec'),

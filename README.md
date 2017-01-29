@@ -55,7 +55,7 @@
 |:---------|:-------------|
 | npm      | `npm install jasmine-expect --save-dev` |
 | Bower    | `bower install jasmine-expect --save-dev` |
-| Manual   | Downloads are available on the [releases](releases) page. |
+| Manual   | Downloads are available on the [releases](https://github.com/JamieMason/Jasmine-Matchers/releases) page. |
 
 <!-- ## Integration
 
@@ -215,6 +215,7 @@ Matcher | Example
 [toHaveStringSameLengthAs](blob/master/test/toHaveStringSameLengthAs.spec.js) | `expect(object).toHaveStringSameLengthAs(memberName, string);`
 [toHaveStringShorterThan](blob/master/test/toHaveStringShorterThan.spec.js) | `expect(object).toHaveStringShorterThan(memberName, string);`
 [toHaveTrue](blob/master/test/toHaveTrue.spec.js) | `expect(object).toHaveTrue(memberName);`
+[toHaveUndefined](https://github.com/JamieMason/Jasmine-Matchers/blob/master/test/toHaveUndefined.spec.js) | `expect(object).toHaveUndefined(memberName);`
 [toHaveWhitespaceString](blob/master/test/toHaveWhitespaceString.spec.js) | `expect(object).toHaveWhitespaceString(memberName);`
 [toHaveWholeNumber](blob/master/test/toHaveWholeNumber.spec.js) | `expect(object).toHaveWholeNumber(memberName);`
 

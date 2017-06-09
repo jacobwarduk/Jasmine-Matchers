@@ -5,3 +5,5 @@ Jasmine-Matchers.sublime-project
 Jasmine-Matchers.sublime-workspace
 node_modules/
 npm-debug.log
+.idea
+*.log*

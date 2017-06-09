@@ -11,6 +11,7 @@ describe('toBeValidDate', () => {
     describe('when value is NOT a valid instance of Date', () => {
       it('should deny', () => {
         expect(null).not.toBeValidDate();
+<<<<<<< HEAD
         expect(() => {}).not.toBeValidDate();
         try {
           expect(new Date('')).not.toBeValidDate();
@@ -18,6 +19,11 @@ describe('toBeValidDate', () => {
         } catch (err) {
           // ignore "RangeError: Invalid time value" seen only in node.js
         }
+=======
+        expect(function () {}).not.toBeValidDate();
+        expect(new Date('')).not.toBeValidDate();
+        expect(new Date('invalid')).not.toBeValidDate();
+>>>>>>> Add additional assertions for toBeValidDate()
       });
     });
   });

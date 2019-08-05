@@ -1,25 +1,25 @@
 # Jasmine-Matchers
 
+> Write Beautiful Specs with Custom Matchers for Jest and Jasmine
+
 [![NPM version](http://img.shields.io/npm/v/jasmine-expect.svg?style=flat-square)](https://www.npmjs.com/package/jasmine-expect)
 [![NPM downloads](http://img.shields.io/npm/dm/jasmine-expect.svg?style=flat-square)](https://www.npmjs.com/package/jasmine-expect)
-[![Dependency Status](http://img.shields.io/david/JamieMason/Jasmine-Matchers.svg?style=flat-square)](https://david-dm.org/JamieMason/Jasmine-Matchers)
 [![Build Status](http://img.shields.io/travis/JamieMason/Jasmine-Matchers/master.svg?style=flat-square)](https://travis-ci.org/JamieMason/Jasmine-Matchers)
-[![Code Climate](https://img.shields.io/codeclimate/github/JamieMason/Jasmine-Matchers.svg?style=flat-square)](https://codeclimate.com/github/JamieMason/Jasmine-Matchers)
-[![Gitter Chat for Jasmine-Matchers](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JamieMason/Jasmine-Matchers)
-[![Donate via PayPal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/foldleft)
-[![Donate via Gratipay](https://img.shields.io/gratipay/user/JamieMason.svg)](https://gratipay.com/~JamieMason/)
-[![Analytics](https://ga-beacon.appspot.com/UA-45466560-5/jasmine-matchers?flat&useReferer)](https://github.com/igrigorik/ga-beacon)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8b2cd248837df1409c4d/maintainability)](https://codeclimate.com/github/JamieMason/Jasmine-Matchers/maintainability)
 [![Follow JamieMason on GitHub](https://img.shields.io/github/followers/JamieMason.svg?style=social&label=Follow)](https://github.com/JamieMason)
 [![Follow fold_left on Twitter](https://img.shields.io/twitter/follow/fold_left.svg?style=social&label=Follow)](https://twitter.com/fold_left)
 
-[Overview](#overview) | [Installation](#installation) | [Matchers](#matchers) | [Asymmetric Matchers](#asymmetric-matchers) | [Integration](#integration) | [Browser Support](#browser-support)
+[Overview](#overview) | [Installation](#installation) | [Matchers](#matchers) |
+[Asymmetric Matchers](#asymmetric-matchers) | [Integration](#integration) |
+[Browser Support](#browser-support)
 
 ## Overview
 
 ##### What
 
 A huge library of test matchers for a range of common use-cases, compatible with
-all versions of [Jasmine](http://jasmine.github.io/) and [Jest](http://facebook.github.io/jest/).
+all versions of [Jasmine](http://jasmine.github.io/) and
+[Jest](http://facebook.github.io/jest/).
 
 ##### Why
 
@@ -39,8 +39,7 @@ stating that you `expect(cycleWheels).toBeEvenNumber()`.
   <img alt="Sponsored by BrowserStack" src="https://cdn.rawgit.com/JamieMason/Jasmine-Matchers/ad1ea0e6/browserstack.svg" height="40" />
 </a>
 
-
-## Installation
+## 🌩 Installation
 
 ##### npm
 
@@ -56,14 +55,14 @@ bower install jasmine-expect --save-dev
 
 ##### Manual
 
-Downloads are available on the [releases](https://github.com/JamieMason/Jasmine-Matchers/releases) page.
+Downloads are available on the
+[releases](https://github.com/JamieMason/Jasmine-Matchers/releases) page.
 
-
-## API
+## 📝 API
 
 The [Jasmine testing framework](http://jasmine.github.io/) from
 [Pivotal Labs](http://pivotallabs.com/) comes with this
-[default set of matchers](http://jasmine.github.io/edge/introduction.html#section-Expectations);
+[default set of matchers](http://jasmine.github.io/edge/introduction.html#section-Expectations):
 
 ```js
 expect(instance).toBe(instance);
@@ -86,7 +85,8 @@ expect(fn).toThrow(string);
 expect(fn).toThrowError(string);
 ```
 
-and this [default set of asymmetric matchers](http://jasmine.github.io/2.4/introduction.html#section-Matching_Anything_with_%3Ccode%3Ejasmine.any%3C/code%3E);
+and this
+[default set of asymmetric matchers](http://jasmine.github.io/2.4/introduction.html#section-Matching_Anything_with_%3Ccode%3Ejasmine.any%3C/code%3E);
 
 ```js
 jasmine.any(Constructor);
@@ -96,9 +96,10 @@ jasmine.objectContaining(mixed);
 jasmine.stringMatching(pattern);
 ```
 
-## Matchers
+### Matchers
 
-[Jasmine-Matchers](https://github.com/JamieMason/Jasmine-Matchers) adds the following matchers;
+[Jasmine-Matchers](https://github.com/JamieMason/Jasmine-Matchers) adds the
+following matchers:
 
 ```js
 expect(array).toBeArray();
@@ -182,7 +183,7 @@ expect(string).toEndWith(substring);
 expect(string).toStartWith(substring);
 ```
 
-## Asymmetric Matchers
+### Asymmetric Matchers
 
 ```js
 any.after(date);
@@ -215,34 +216,39 @@ any.wholeNumber();
 any.withinRange(floor, ceiling);
 ```
 
-
-## Integration
+## 🕹 Usage
 
 ### Browser
 
-Embed [jasmine-matchers.js](https://github.com/JamieMason/Jasmine-Matchers/blob/master/dist/jasmine-matchers.js) after Jasmine but before your tests.
+Embed
+[jasmine-matchers.js](https://github.com/JamieMason/Jasmine-Matchers/blob/master/dist/jasmine-matchers.js)
+after Jasmine but before your tests.
 
 ### Jest
 
-Include the following in your `package.json`;
+Include the following in your `package.json`:
 
 ```json
 "unmockedModulePathPatterns": ["jasmine-expect"]
 ```
 
-And the following at the top of your test suite;
+And the following at the top of your test suite:
 
-```javascript
+```js
 import JasmineExpect from 'jasmine-expect';
 ```
 
 ### Karma
 
-Integration is easy with the [karma-jasmine-matchers](https://github.com/JamieMason/karma-jasmine-matchers) plugin.
+Integration is easy with the
+[karma-jasmine-matchers](https://github.com/JamieMason/karma-jasmine-matchers)
+plugin.
 
 ### Node.js
 
-Use the [Jasmine CLI](https://www.npmjs.com/package/jasmine) and include the path to where Jasmine Matchers is installed in the `helpers` array of your `spec/support/jasmine.json`.
+Use the [Jasmine CLI](https://www.npmjs.com/package/jasmine) and include the
+path to where Jasmine Matchers is installed in the `helpers` array of your
+`spec/support/jasmine.json`.
 
 ```json
 {
@@ -260,8 +266,8 @@ If you are using TypeScript, you might want to
 `npm install @types/jasmine-expect --save-dev` in order to prevent your IDE from
 complaining about the new Matchers.
 
-Also, if you run into TypeScript compilation errors when running your tests,
-add `"jasmine-expect"` to the `"types"` array in your tests' `tsconfig` file.
+Also, if you run into TypeScript compilation errors when running your tests, add
+`"jasmine-expect"` to the `"types"` array in your tests' `tsconfig` file.
 
 As an example, for an Angular CLI based project, this would be your
 `tsconfig.spec.json` file:
@@ -274,46 +280,49 @@ As an example, for an Angular CLI based project, this would be your
     "baseUrl": "./",
     "module": "commonjs",
     "target": "es5",
-    "types": [
-      "jasmine",
-      "node",
-      "jasmine-expect"
-    ]
+    "types": ["jasmine", "node", "jasmine-expect"]
   },
-  "files": [
-    "test.ts"
-  ],
-  "include": [
-    "**/*.spec.ts",
-    "**/*.d.ts"
-  ]
+  "files": ["test.ts"],
+  "include": ["**/*.spec.ts", "**/*.d.ts"]
 }
 ```
 
 ### Sublime Text
 
-[Jasmine-Matchers-Snippets](https://github.com/JamieMason/Jasmine-Matchers-Snippets) or [Jasmine-Matchers-ES6-Snippets](https://github.com/JamieMason/Jasmine-Matchers-ES6-Snippets) can be installed with [Package Control](https://packagecontrol.io/packages/Jasmine%20Matchers%20Snippets) to ease development with Jasmine Matchers in Sublime Text.
+[Jasmine-Matchers-Snippets](https://github.com/JamieMason/Jasmine-Matchers-Snippets)
+or
+[Jasmine-Matchers-ES6-Snippets](https://github.com/JamieMason/Jasmine-Matchers-ES6-Snippets)
+can be installed with
+[Package Control](https://packagecontrol.io/packages/Jasmine%20Matchers%20Snippets)
+to ease development with Jasmine Matchers in Sublime Text.
 
 ### Tern
 
-There is a [Plugin](https://github.com/ik9999/tern-jasminematchers) for [Tern](https://github.com/ternjs/tern) to auto-complete matchers in your Text Editor.
+There is a [Plugin](https://github.com/ik9999/tern-jasminematchers) for
+[Tern](https://github.com/ternjs/tern) to auto-complete matchers in your Text
+Editor.
 
-
-## Browser Support
+## 🌍 Browser Support
 
 Jasmine-Matchers is tested on
 [Travis CI](https://travis-ci.org/JamieMason/Jasmine-Matchers) and
 [BrowserStack](https://browserstack.com) against the following environments.
 
-Browser | Version Range
-:-------|-------------:
-Android | 4.0 - 5.1
-Chrome | 26 - 52
-Firefox | 4 - 48
-Internet Explorer | 9 - Edge
-iOS | 6.0 - 9.3*
-Opera | 11 - 12
-Safari | 6 - 9*
+| Browser           | Version Range |
+| :---------------- | ------------: |
+| Android           |     4.0 - 5.1 |
+| Chrome            |       26 - 52 |
+| Firefox           |        4 - 48 |
+| Internet Explorer |      9 - Edge |
+| iOS               |   6.0 - 9.3\* |
+| Opera             |       11 - 12 |
+| Safari            |       6 - 9\* |
 
 \* Safari 5.1 and iOS 5.1 are actually fully supported except for `toBeIso8601`.
 
+## 🙋🏾‍♀️ Getting Help
+
+- Get help with issues by creating a
+  [Bug Report](https://github.com/JamieMason/Jasmine-Matchers/issues/new?template=bug_report.md).
+- Discuss ideas by opening a
+  [Feature Request](https://github.com/JamieMason/Jasmine-Matchers/issues/new?template=feature_request.md).
